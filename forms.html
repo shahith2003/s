@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="signup.html" method="get" enctype="multipart/form-data">
+    <div>
+         <!-- <label for="username">User name:</label> -->
+        <input type="username" placeholder="UserName"required>
+    </div>
+    <div>
+         <!-- <label for="password">Password:</label> -->
+        <input type="password" placeholder="Password" required minlength="6">
+    </div>   
+    <div>
+        <label for="year"></label>
+        <input type="date" name="yearofbirth" min="01/01/1925" max="22/01/2025" placeholder="Year of Birth">
+    </div>
+    <div>
+       <input type="radio" name="gender" id="male" value="male"> 
+       <label for="male">Male</label>
+       <input type="radio" name="gender" id="female" value="female">
+       <label for="female">Female</label>
+    </div>
+    <div>
+    <select name="state" id="state"><option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Kerala">Kerala</option>
+    </select>
+        
+    </div>
+    <div>
+        <input type="file" id="file" name="file">
+    </div>
+    <!-- <button type="submit">Sign Up</button> -->
+     <input type="image" src="img/download.jpeg" width="100" align="left">
+    <button type="reset">Reset</button>
+       
+    </form>
+    
+</body>
+</html>
